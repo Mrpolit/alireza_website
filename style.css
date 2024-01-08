@@ -1,10 +1,12 @@
 .alireza{
     background-color: yellow;
     width: fit-content;
-    font-size: large;
+    margin: 50px;
+    cursor: pointer; 
 }
 .mojtaba{
     background-color: blue;
     width: fit-content;
     font-size: large;
+    cursor: move;
 }
