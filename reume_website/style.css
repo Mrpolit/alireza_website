@@ -1,0 +1,141 @@
+:root {
+    --clr-dark: #F8853E;
+    --clr-light: #F99A54;
+    --clr-primary: #FAAF6A;
+    --clr-secondary: #FCC47F;
+    --clr-accent: #FDD995;
+    --clr-text: #FEEEAB;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-accent);
+  
+    --ff-title: "Playfair Display", serif;
+    --ff-body: "Assistant", sans-serif;
+}
+.darkmode {
+    --clr-dark: #032030;
+    --clr-light: #022B42;
+    --clr-primary: #003554;
+    --clr-secondary: #004D47;
+    --clr-accent: #006494;
+    --clr-text: #006DA4 ;
+  
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+}
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: var(--ff-body);
+    font-size: calc(1rem + 1svw);
+    background-color: var(--background);
+    color: var(--foreground);
+}
+/* infinit scroll settings start */
+.scroller {
+    max-width: 600px;
+  }
+  
+  .scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+  }
+  
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+/* infinit scroll settings end   */
+/* sticky navigation bar settings start  */
+.navbar{
+    position: sticky;
+    top:0;
+    display: flex;
+    padding: 1rem 0;
+    background-color: var(--clr-dark);
+    box-shadow: 0 1rem 1rem var(--clr-primary);
+    justify-content: space-evenly;
+    a{
+        text-decoration: none;
+        text-align: center;
+        color: var(--clr-text);
+    }
+    .name-logo{
+        display: grid;
+        width: 30%;
+    }
+    .section{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+        gap: 1rem ;
+    }
+    .button-holder{
+      width:7rem;
+      .toggle{
+        width:5rem;
+        height: 2rem;
+        border-radius: 3rem;
+        box-shadow: inset 0.5rem 0.5rem 1rem var(--clr-secondary),
+                    inset -5rem -0.5rem 2rem var(--clr-dark);
+        display: flex;
+        align-items: center;
+        padding-left: 0.3rem;
+        .dark-mode-button{
+          cursor: pointer;
+          width: 1.4rem;
+          height: 1.4rem;
+          border-radius: 50%;
+          background-color: var(--clr-secondary);
+          transition: all 0.4s ease-in-out;
+        }
+        .dark{
+          transform: translateX(3rem);
+        }
+      }
+    }
+}
+/* sticky navigation bar settings end  */
+.container{
+    height: 100svh;
+}
