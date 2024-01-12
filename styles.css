@@ -17,11 +17,7 @@
     width: 60%;
   }
 }
-
-
-
 .A{
-  
   font-size: medium;
   color: black;
   background-color: azure;
@@ -56,4 +52,15 @@ margin-top: 0%;
 color: aquamarine;
 background-color: blue;
 margin-top: 100px;
+}
+.grid{
+  width: 100svw;
+  height: 100svh;
+  display: grid;
+  gap:1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  div{
+    background-color: blue;
+  }
 }
