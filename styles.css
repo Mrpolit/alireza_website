@@ -21,11 +21,17 @@
 
 
 .A{
-font-size: medium;
-color: black;
-background-color: azure;
-margin-left: 600PX;
-
+  
+  font-size: medium;
+  color: black;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a{
+    text-decoration: none;
+    color: black;
+  }
 }
 .content p {
 font-size: small;
