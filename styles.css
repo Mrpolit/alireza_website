@@ -2,11 +2,16 @@
 
 
 .header{
-background-color: rgb(125, 120, 120);
-margin-left: 200px;
-margin-right: 297PX;
-margin-top: 0%;
-
+  background-color: rgb(125, 120, 120);
+  margin-left: 200px;
+  margin-right: 297PX;
+  margin-top: 0%;
+  h1 {
+    border-bottom: rgb(79, 14, 14);
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+  }
 }
 
 
@@ -31,12 +36,6 @@ text-align: center;
     bottom: 0;
 }
 
-.header h1 {
-border-bottom: rgb(79, 14, 14);
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-margin-bottom: 10px;
-}
 
 .scroll-text {
 font-size: large;
