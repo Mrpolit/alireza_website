@@ -1,0 +1,50 @@
+
+
+
+.header{
+background-color: rgb(125, 120, 120);
+margin-left: 200px;
+margin-right: 297PX;
+margin-top: 0%;
+
+}
+
+
+
+.A{
+font-size: medium;
+color: black;
+background-color: azure;
+margin-left: 600PX;
+
+}
+.content p {
+font-size: small;
+font-family: cursive;
+text-align: center;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;;
+}
+
+.footer {
+text-align: center;
+  background-color: red;
+    bottom: 0;
+}
+
+.header h1 {
+border-bottom: rgb(79, 14, 14);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-bottom: 10px;
+}
+
+.scroll-text {
+font-size: large;
+margin-left: 200px;
+margin-right: 297PX;
+margin-top: 0%;
+
+color: aquamarine;
+background-color: blue;
+margin-top: 100px;
+}
